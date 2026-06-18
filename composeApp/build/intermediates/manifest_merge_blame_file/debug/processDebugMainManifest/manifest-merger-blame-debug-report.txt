@@ -1,0 +1,427 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.example.project"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->INJECTED
+8        android:minSdkVersion="24"
+8-->INJECTED
+9        android:targetSdkVersion="36" />
+9-->INJECTED
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:4:5-66
+11-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:5:5-64
+12-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:5:22-62
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:6:5-78
+13-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:7:5-80
+14-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+15-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:8:5-76
+15-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:8:22-74
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:9:5-65
+16-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:9:22-63
+17
+18    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+19    <uses-feature
+19-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+20        android:name="android.hardware.camera"
+20-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+21        android:required="false" />
+21-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+22    <uses-feature
+22-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+23        android:name="android.hardware.camera.front"
+23-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+24        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+24-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+25    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+27        android:name="android.hardware.camera.autofocus"
+27-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+28        android:required="false" />
+28-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+29    <uses-feature
+29-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+30        android:name="android.hardware.camera.flash"
+30-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+31        android:required="false" />
+31-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+32    <uses-feature
+32-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+33        android:name="android.hardware.screen.landscape"
+33-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+34        android:required="false" />
+34-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+35    <uses-feature
+35-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+36        android:name="android.hardware.wifi"
+36-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+37        android:required="false" />
+37-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+38
+39    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+39-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:22:5-79
+39-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:22:22-76
+40    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+40-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:24:5-68
+40-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:24:22-65
+41    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+41-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:26:5-82
+41-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:26:22-79
+42
+43    <permission
+43-->[androidx.core:core:1.16.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\8daa0930360cead24d858d5d3fb54914\workspace\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+44        android:name="org.example.project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.16.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\8daa0930360cead24d858d5d3fb54914\workspace\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.16.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\8daa0930360cead24d858d5d3fb54914\workspace\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="org.example.project.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.16.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\8daa0930360cead24d858d5d3fb54914\workspace\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.16.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\8daa0930360cead24d858d5d3fb54914\workspace\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+48
+49    <application
+49-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:11:5-43:19
+50        android:allowBackup="true"
+50-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:12:9-35
+51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+51-->[androidx.core:core:1.16.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\8daa0930360cead24d858d5d3fb54914\workspace\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+52        android:debuggable="true"
+53        android:extractNativeLibs="false"
+53-->INJECTED
+54        android:icon="@mipmap/ic_launcher"
+54-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:13:9-43
+55        android:label="VeciNet"
+55-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:14:9-32
+56        android:roundIcon="@mipmap/ic_launcher_round"
+56-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:15:9-54
+57        android:supportsRtl="true"
+57-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:16:9-35
+58        android:testOnly="true"
+59        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+59-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:17:9-72
+60        android:usesCleartextTraffic="true" >
+60-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:18:9-44
+61        <activity
+61-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:20:9-27:20
+62            android:name="org.example.project.MainActivity"
+62-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:22:13-41
+63            android:exported="true" >
+63-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:21:13-36
+64            <intent-filter>
+64-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:23:13-26:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:24:17-69
+65-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:24:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:25:17-77
+67-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:25:27-74
+68            </intent-filter>
+69        </activity>
+70
+71        <!-- Servicio de notificaciones push Firebase -->
+72        <service
+72-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:30:9-36:19
+73            android:name="org.example.project.VeciNetFirebaseService"
+73-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:31:13-51
+74            android:exported="false" >
+74-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:32:13-37
+75            <intent-filter>
+75-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:33:13-35:29
+76                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+76-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:34:17-78
+76-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:34:25-75
+77            </intent-filter>
+78        </service>
+79
+80        <!-- Canal de notificacion por defecto -->
+81        <meta-data
+81-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:39:9-41:46
+82            android:name="com.google.firebase.messaging.default_notification_channel_id"
+82-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:40:13-89
+83            android:value="vecinet_normal" />
+83-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:41:13-43
+84
+85        <activity
+85-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+86            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+86-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+87            android:clearTaskOnLaunch="true"
+87-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+88            android:screenOrientation="sensorLandscape"
+88-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+89            android:stateNotNeeded="true"
+89-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+90            android:theme="@style/zxing_CaptureTheme"
+90-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+91            android:windowSoftInputMode="stateAlwaysHidden" />
+91-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\73ca63c43b871147a314c9dc0ec15e4a\workspace\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+92
+93        <service
+93-->[com.google.firebase:firebase-messaging-ktx:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\2cd5a8fdc0e509d7c4a1a8c8f5930b54\workspace\transformed\firebase-messaging-ktx-23.4.0\AndroidManifest.xml:23:9-29:19
+94            android:name="com.google.firebase.components.ComponentDiscoveryService"
+94-->[com.google.firebase:firebase-messaging-ktx:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\2cd5a8fdc0e509d7c4a1a8c8f5930b54\workspace\transformed\firebase-messaging-ktx-23.4.0\AndroidManifest.xml:24:13-84
+95            android:directBootAware="true"
+95-->[com.google.firebase:firebase-common:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\647c79ec6a7108bce11757f0458479b6\workspace\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+96            android:exported="false" >
+96-->[com.google.firebase:firebase-messaging-ktx:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\2cd5a8fdc0e509d7c4a1a8c8f5930b54\workspace\transformed\firebase-messaging-ktx-23.4.0\AndroidManifest.xml:25:13-37
+97            <meta-data
+97-->[com.google.firebase:firebase-messaging-ktx:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\2cd5a8fdc0e509d7c4a1a8c8f5930b54\workspace\transformed\firebase-messaging-ktx-23.4.0\AndroidManifest.xml:26:13-28:85
+98                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar"
+98-->[com.google.firebase:firebase-messaging-ktx:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\2cd5a8fdc0e509d7c4a1a8c8f5930b54\workspace\transformed\firebase-messaging-ktx-23.4.0\AndroidManifest.xml:27:17-129
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.firebase:firebase-messaging-ktx:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\2cd5a8fdc0e509d7c4a1a8c8f5930b54\workspace\transformed\firebase-messaging-ktx-23.4.0\AndroidManifest.xml:28:17-82
+100            <meta-data
+100-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:57:13-59:85
+101                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+101-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:58:17-122
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:59:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:60:13-62:85
+104                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+104-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:61:17-119
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:62:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\60fe137ed6fcda2b38d1e844415014e4\workspace\transformed\firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+107                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+107-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\60fe137ed6fcda2b38d1e844415014e4\workspace\transformed\firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\60fe137ed6fcda2b38d1e844415014e4\workspace\transformed\firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\60fe137ed6fcda2b38d1e844415014e4\workspace\transformed\firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+110                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+110-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\60fe137ed6fcda2b38d1e844415014e4\workspace\transformed\firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\60fe137ed6fcda2b38d1e844415014e4\workspace\transformed\firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\042c193ab3e3d2d36a4f1fedc41be5ce\workspace\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+113                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+113-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\042c193ab3e3d2d36a4f1fedc41be5ce\workspace\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\042c193ab3e3d2d36a4f1fedc41be5ce\workspace\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-common:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\647c79ec6a7108bce11757f0458479b6\workspace\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+116                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+116-->[com.google.firebase:firebase-common:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\647c79ec6a7108bce11757f0458479b6\workspace\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-common:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\647c79ec6a7108bce11757f0458479b6\workspace\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\094a49da7bb4dc3910222779c4ebeaaf\workspace\transformed\firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+119                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+119-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\094a49da7bb4dc3910222779c4ebeaaf\workspace\transformed\firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\094a49da7bb4dc3910222779c4ebeaaf\workspace\transformed\firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+121        </service>
+122
+123        <receiver
+123-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:29:9-40:20
+124            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+124-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:30:13-78
+125            android:exported="true"
+125-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:31:13-36
+126            android:permission="com.google.android.c2dm.permission.SEND" >
+126-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:32:13-73
+127            <intent-filter>
+127-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:33:13-35:29
+128                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+128-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:34:17-81
+128-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:34:25-78
+129            </intent-filter>
+130
+131            <meta-data
+131-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:37:13-39:40
+132                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+132-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:38:17-92
+133                android:value="true" />
+133-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:39:17-37
+134        </receiver>
+135        <!--
+136             FirebaseMessagingService performs security checks at runtime,
+137             but set to not exported to explicitly avoid allowing another app to call it.
+138        -->
+139        <service
+139-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:46:9-53:19
+140            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+140-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:47:13-82
+141            android:directBootAware="true"
+141-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:48:13-43
+142            android:exported="false" >
+142-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\a798ab832fc9a6a1be4a0e4c2d44ceb3\workspace\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:49:13-37
+143            <intent-filter android:priority="-500" >
+143-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:33:13-35:29
+144                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+144-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:34:17-78
+144-->C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\AndroidManifest.xml:34:25-75
+145            </intent-filter>
+146        </service>
+147
+148        <activity
+148-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\9fabbfffb6755c8197240f8af1449f1f\workspace\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+149            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+149-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\9fabbfffb6755c8197240f8af1449f1f\workspace\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+150            android:exported="false"
+150-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\9fabbfffb6755c8197240f8af1449f1f\workspace\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+151            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+151-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\9fabbfffb6755c8197240f8af1449f1f\workspace\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+152
+153        <provider
+153-->[com.google.firebase:firebase-common:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\647c79ec6a7108bce11757f0458479b6\workspace\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+154            android:name="com.google.firebase.provider.FirebaseInitProvider"
+154-->[com.google.firebase:firebase-common:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\647c79ec6a7108bce11757f0458479b6\workspace\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+155            android:authorities="org.example.project.firebaseinitprovider"
+155-->[com.google.firebase:firebase-common:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\647c79ec6a7108bce11757f0458479b6\workspace\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+156            android:directBootAware="true"
+156-->[com.google.firebase:firebase-common:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\647c79ec6a7108bce11757f0458479b6\workspace\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+157            android:exported="false"
+157-->[com.google.firebase:firebase-common:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\647c79ec6a7108bce11757f0458479b6\workspace\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+158            android:initOrder="100" />
+158-->[com.google.firebase:firebase-common:21.0.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\647c79ec6a7108bce11757f0458479b6\workspace\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+159        <provider
+159-->[org.jetbrains.compose.components:components-resources-android:1.10.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\c56f9cda39dd21ede3944abac3629641\workspace\transformed\library-release\AndroidManifest.xml:8:9-13:20
+160            android:name="org.jetbrains.compose.resources.AndroidContextProvider"
+160-->[org.jetbrains.compose.components:components-resources-android:1.10.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\c56f9cda39dd21ede3944abac3629641\workspace\transformed\library-release\AndroidManifest.xml:9:13-82
+161            android:authorities="org.example.project.resources.AndroidContextProvider"
+161-->[org.jetbrains.compose.components:components-resources-android:1.10.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\c56f9cda39dd21ede3944abac3629641\workspace\transformed\library-release\AndroidManifest.xml:10:13-84
+162            android:enabled="true"
+162-->[org.jetbrains.compose.components:components-resources-android:1.10.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\c56f9cda39dd21ede3944abac3629641\workspace\transformed\library-release\AndroidManifest.xml:11:13-35
+163            android:exported="false" >
+163-->[org.jetbrains.compose.components:components-resources-android:1.10.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\c56f9cda39dd21ede3944abac3629641\workspace\transformed\library-release\AndroidManifest.xml:12:13-37
+164        </provider>
+165
+166        <activity
+166-->[androidx.compose.ui:ui-tooling-android:1.10.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\17f62f20b7c5d6f6b1013e3944bafe83\workspace\transformed\ui-tooling\AndroidManifest.xml:23:9-25:39
+167            android:name="androidx.compose.ui.tooling.PreviewActivity"
+167-->[androidx.compose.ui:ui-tooling-android:1.10.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\17f62f20b7c5d6f6b1013e3944bafe83\workspace\transformed\ui-tooling\AndroidManifest.xml:24:13-71
+168            android:exported="true" />
+168-->[androidx.compose.ui:ui-tooling-android:1.10.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\17f62f20b7c5d6f6b1013e3944bafe83\workspace\transformed\ui-tooling\AndroidManifest.xml:25:13-36
+169
+170        <provider
+170-->[androidx.emoji2:emoji2:1.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\98072d2d59499cfedb48265b3c27f63b\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+171            android:name="androidx.startup.InitializationProvider"
+171-->[androidx.emoji2:emoji2:1.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\98072d2d59499cfedb48265b3c27f63b\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+172            android:authorities="org.example.project.androidx-startup"
+172-->[androidx.emoji2:emoji2:1.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\98072d2d59499cfedb48265b3c27f63b\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+173            android:exported="false" >
+173-->[androidx.emoji2:emoji2:1.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\98072d2d59499cfedb48265b3c27f63b\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+174            <meta-data
+174-->[androidx.emoji2:emoji2:1.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\98072d2d59499cfedb48265b3c27f63b\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+175                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+175-->[androidx.emoji2:emoji2:1.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\98072d2d59499cfedb48265b3c27f63b\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+176                android:value="androidx.startup" />
+176-->[androidx.emoji2:emoji2:1.4.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\98072d2d59499cfedb48265b3c27f63b\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+177            <meta-data
+177-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\6f736e5795cd064801a674f3401d3f02\workspace\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:29:13-31:52
+178                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+178-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\6f736e5795cd064801a674f3401d3f02\workspace\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:30:17-78
+179                android:value="androidx.startup" />
+179-->[androidx.lifecycle:lifecycle-process:2.9.4] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\6f736e5795cd064801a674f3401d3f02\workspace\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:31:17-49
+180            <meta-data
+180-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:29:13-31:52
+181                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+181-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:30:17-85
+182                android:value="androidx.startup" />
+182-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:31:17-49
+183        </provider>
+184
+185        <uses-library
+185-->[androidx.window:window:1.5.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\c5884db0aee3904fab6356d59af41a58\workspace\transformed\window-1.5.0\AndroidManifest.xml:23:9-25:40
+186            android:name="androidx.window.extensions"
+186-->[androidx.window:window:1.5.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\c5884db0aee3904fab6356d59af41a58\workspace\transformed\window-1.5.0\AndroidManifest.xml:24:13-54
+187            android:required="false" />
+187-->[androidx.window:window:1.5.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\c5884db0aee3904fab6356d59af41a58\workspace\transformed\window-1.5.0\AndroidManifest.xml:25:13-37
+188        <uses-library
+188-->[androidx.window:window:1.5.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\c5884db0aee3904fab6356d59af41a58\workspace\transformed\window-1.5.0\AndroidManifest.xml:26:9-28:40
+189            android:name="androidx.window.sidecar"
+189-->[androidx.window:window:1.5.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\c5884db0aee3904fab6356d59af41a58\workspace\transformed\window-1.5.0\AndroidManifest.xml:27:13-51
+190            android:required="false" />
+190-->[androidx.window:window:1.5.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\c5884db0aee3904fab6356d59af41a58\workspace\transformed\window-1.5.0\AndroidManifest.xml:28:13-37
+191
+192        <meta-data
+192-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\23078c479e4c18f3593bd7d2fe2e91a9\workspace\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+193            android:name="com.google.android.gms.version"
+193-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\23078c479e4c18f3593bd7d2fe2e91a9\workspace\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+194            android:value="@integer/google_play_services_version" />
+194-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\23078c479e4c18f3593bd7d2fe2e91a9\workspace\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+195
+196        <service
+196-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\b8ce970410474a1918d1303b2507d898\workspace\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+197            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+197-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\b8ce970410474a1918d1303b2507d898\workspace\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+198            android:exported="false" >
+198-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\b8ce970410474a1918d1303b2507d898\workspace\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+199            <meta-data
+199-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\b8ce970410474a1918d1303b2507d898\workspace\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+200                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+200-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\b8ce970410474a1918d1303b2507d898\workspace\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+201                android:value="cct" />
+201-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\b8ce970410474a1918d1303b2507d898\workspace\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+202        </service>
+203        <service
+203-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\3730255e66e708abf1dc1e1141a2c30e\workspace\transformed\transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+204            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+204-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\3730255e66e708abf1dc1e1141a2c30e\workspace\transformed\transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+205            android:exported="false"
+205-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\3730255e66e708abf1dc1e1141a2c30e\workspace\transformed\transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+206            android:permission="android.permission.BIND_JOB_SERVICE" >
+206-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\3730255e66e708abf1dc1e1141a2c30e\workspace\transformed\transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+207        </service>
+208
+209        <receiver
+209-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\3730255e66e708abf1dc1e1141a2c30e\workspace\transformed\transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+210            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+210-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\3730255e66e708abf1dc1e1141a2c30e\workspace\transformed\transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+211            android:exported="false" />
+211-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\3730255e66e708abf1dc1e1141a2c30e\workspace\transformed\transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+212        <receiver
+212-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:34:9-52:20
+213            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+213-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:35:13-76
+214            android:directBootAware="false"
+214-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:36:13-44
+215            android:enabled="true"
+215-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:37:13-35
+216            android:exported="true"
+216-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:38:13-36
+217            android:permission="android.permission.DUMP" >
+217-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:39:13-57
+218            <intent-filter>
+218-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:40:13-42:29
+219                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+219-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:41:17-91
+219-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:41:25-88
+220            </intent-filter>
+221            <intent-filter>
+221-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:43:13-45:29
+222                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+222-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:44:17-85
+222-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:44:25-82
+223            </intent-filter>
+224            <intent-filter>
+224-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:46:13-48:29
+225                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+225-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:47:17-88
+225-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:47:25-85
+226            </intent-filter>
+227            <intent-filter>
+227-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:49:13-51:29
+228                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+228-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:50:17-95
+228-->[androidx.profileinstaller:profileinstaller:1.4.1] C:\Users\bimuribe\.gradle\caches\9.3.1\transforms\f18a7667879ee74e86a3c71e50b98de5\workspace\transformed\profileinstaller-1.4.1\AndroidManifest.xml:50:25-92
+229            </intent-filter>
+230        </receiver>
+231    </application>
+232
+233</manifest>

@@ -1,0 +1,10 @@
+org.example.project.composeApp-pngs-0 C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\build\generated\res\pngs\debug
+org.example.project.composeApp-resValues-1 C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\build\generated\res\resValues\debug
+org.example.project.composeApp-updated_navigation_xml-2 C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\build\generated\updated_navigation_xml\debug
+org.example.project.composeApp-packageDebugResources-3 C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+org.example.project.composeApp-packageDebugResources-4 C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+org.example.project.composeApp-debug-5 C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\build\intermediates\merged_res\debug\mergeDebugResources
+org.example.project.composeApp-androidDebug-6 C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidDebug\res
+org.example.project.composeApp-androidMain-7 C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\androidMain\res
+org.example.project.composeApp-debug-8 C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\debug\res
+org.example.project.composeApp-main-9 C:\Users\bimuribe\Documents\Proyectos\KotlinProject\composeApp\src\main\res

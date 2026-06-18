@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "459133622942",
+    "project_id": "vecinet-43a98",
+    "storage_bucket": "vecinet-43a98.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459133622942:android:9df885e5f22028e930398f",
+        "android_client_info": {
+          "package_name": "org.example.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwixPFs9JY435mhxeB20kMlWpP6Mhfb20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

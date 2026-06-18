@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KotlinProject</string>
+    <string name="firebase_database_url"/>
+    <string name="gcm_defaultSenderId">459133622942</string>
+    <string name="google_api_key">AIzaSyBwixPFs9JY435mhxeB20kMlWpP6Mhfb20</string>
+    <string name="google_app_id">1:459133622942:android:9df885e5f22028e930398f</string>
+    <string name="google_storage_bucket">vecinet-43a98.firebasestorage.app</string>
+    <string name="project_id">vecinet-43a98</string>
+</resources>
